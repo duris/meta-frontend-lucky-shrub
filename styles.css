@@ -1,0 +1,204 @@
+/* Global Settings */
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+body {
+  background-color: rgb(203, 226, 202);
+}
+
+/* Header  Main Footer Wrapper */
+.container{
+  border: 3px solid cadetblue;
+  background-color: azure;
+  max-width: 1100px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 30px;
+  text-align: center;  
+}
+header span{
+  padding: 30px 0;
+  display: block;
+}
+
+/* Flex Box */
+.info,footer,nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Nav */
+nav{
+  background-color: cadetblue;
+  padding: 18px 0;
+}
+nav li{
+  display: inline;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  color:#fff;
+  font-size: 18px;
+  cursor: pointer;
+  height: 30px;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover{
+  font-size: 20px;
+  color:rgb(253, 255, 236);
+  transition:1s;
+  color: rgb(158, 240, 240);
+}
+
+/* Main */
+main{
+  padding: 0 0px;
+}
+
+/* Info Section */
+.info{
+  padding: 40px 0 0;
+  overflow: hidden;
+}
+.info article{ 
+  width: 30%;
+  font-size: 16px;
+  margin-bottom: 40px;
+  padding: 0 2%;
+  margin-left: 2%;
+}
+.info article:nth-child(1),.info article:nth-child(2){
+  border-right: 1px cadetblue solid;
+}
+.info h1{
+  color: cadetblue;
+}
+.info img{
+  width: 96%;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.info img:hover{
+  opacity: .7;
+  transition: all;
+  padding-left: 4px;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+
+/* Special Promotion  */
+.promotion{  
+  font-size: 50px;
+  min-height: 360px;
+  display: flex;
+  position: relative;
+  background-image: url('https://ik.imagekit.io/zhmk2wx4u/nursery1_bmKAS_eOH.png'); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.promotion span{
+  color: #fff;
+  opacity: 1;
+  height: 100px;
+  padding: 60px 60px 0;
+  float: left;
+  animation-name: custom-promo;
+  animation-duration: 6s;
+}
+.promotion p{
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  max-width: 70vw;
+  padding: 60px;
+  animation-name: custom-promo;
+  animation-duration: 3s
+}
+
+/* Special Promotion Animation */
+@keyframes custom-promo {
+  from {
+   opacity: 0;
+  }
+
+  to {   
+   opacity: 1;
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: cadetblue;
+  border-top: 1px cadetblue solid;
+  padding: 20px 0 20px;
+  text-align: center;
+}
+
+.social a{
+  text-align: center;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;  
+}
+.social a:hover{
+  color: rgb(158, 240, 240);
+}
+
+.contact {
+  text-align: left;
+  padding: 10px 10px 30px;
+  color: rgb(247, 239, 228);
+}
+.copy{
+  text-align: left;
+  font-size: 14px;
+  color:rgb(247, 239, 228);
+  padding: 20px 14px 0;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 680px) {
+  .promotion span {
+    font-size: 40px;
+  }
+  .promotion{
+    min-height: 300px ;
+  }
+  .info{
+    display: block;
+    padding-top: 0;
+  }
+  .info article{
+    border:none;
+    width: 100%;
+    display: block;    
+  }
+  .promotion p{
+    display: none;
+  }
+  .info article p{
+    width: 80%;
+  }
+  .info .img-wrapper{
+    width: 80%;
+  }
+  .info img{
+    width: 85%;
+    height: 250px;
+    border-radius: 10px;
+  }
+}
