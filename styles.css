@@ -55,8 +55,8 @@ nav li a{
 nav li a:hover{
   font-size: 20px;
   color:rgb(253, 255, 236);
-  transition:1s;
-  color: rgb(158, 240, 240);
+  transition:.1s;
+  color: rgb(203, 226, 202);
 }
 
 /* Main */
@@ -92,7 +92,7 @@ main{
   opacity: .7;
   transition: all;
   padding-left: 4px;
-  transition-duration: .5s;
+  transition-duration: .2s;
   cursor: pointer;
 }
 
